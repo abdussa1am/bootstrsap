@@ -10,12 +10,13 @@
 </head>
 <style>
   .row{
-      margin: auto;
+    margin: auto;
+    
   }
 
   .imagetext{
       position: absolute;
-      bottom: 350px;
+      bottom: 400px;
       right:20% ;
       left:20% ;
       font-size: 1.3em;
@@ -24,14 +25,54 @@
   }
   #mainheading{
       letter-spacing: 5px;
-      line-height: 100px;
+      
   }
   .mainimage{
-      opacity: 0.7;
+      opacity: 0.8;
   }
   .heading{
+      position: relative;
+      margin-top:100px ;
+      font-size: 1.3em;
+      font-weight: lighter;
+      font-family: 'Raleway', sans-serif;
+     
 
   }
+.card{
+    
+}
+.carding{
+
+     margin: 55px;
+     padding: 35px;
+     border-radius: 8px;
+     box-shadow: 5px 5px 10px gray;
+}
+.carding:hover{
+     
+     background-color: rgb(168, 166, 166);
+     transform: scale(1.1);
+     
+}
+.subimage{
+  
+     opacity: 0.8;
+}
+#subtext{
+
+  margin-left: 150px;
+  margin-right: 150px;
+
+}
+.ft{
+  height: 100px;
+  background-color: #343a40;
+  color: white;
+}
+.ftext{
+  mr
+}
 </style>
 <body>
     <div class="container-fliuid">
@@ -39,7 +80,7 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="#">industious</a>
+  <a class="navbar-brand" href="#">industrious</a>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -68,19 +109,52 @@
             <center><h1 id="mainheading">INDUSTRIOUS</h1></center>
             <center><p>A responsive business oriented template with a video background
                 designed by TEMPLATED and released under the Creative Commons License.</p></center>
+            <center><button type="button" class="btn btn-dark">Sign in</button></center>
         </div>
-        </div>  
+        </div> 
     </div>
-    <div class="row">
-        <div class="heading"></div>
+    
+    <div class="row" id="subtext">
+        <div class="heading">
         <div class="col-lg-12">
             <center><h1>SEM TURPIS AMET SEMPER</h1></center>
             <center><p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p></center>
         </div>
         </div>  
     </div>
-
-
+    <div class="card">
+    <div class="row">
+      <div class="col-lg-3 carding">
+          <div class="subimage">
+            <img src="istockphoto-666132290-170667a.jpg" width="100%" height="200px">
+          </div><br>
+            <center><h2>FEUGIAT CONSEQUAT </h2></center>
+            <center><p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p></center>
+      </div>
+      <div class="col-lg-3 carding">
+        <div class="subimage">
+            <img src="industry-1752876_1920.png" width="100%" height="200px">
+        </div><br>
+            <center><h2>ANTE SEM INTEGER</h2></center>
+            <center><p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p></center>
+      </div>
+      <div class="col-lg-3 carding">
+        <div class="subimage">
+            <img src="istockphoto-666132290-170667a.jpg" width="100%" height="200px">
+        </div><br>
+            <center><h2>IPSUM CONSEQUAT </h2></center>
+            <center><p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p></center>
+      </div>
+    </div>
+    </div>
+  <footer>
+      <div class="ft">
+        <div class="col-lg-3">
+         <center><h1 style="padding-top: 10px;">footer</h1></center>
+        </div>
+      </div>
+ </footer>
+ 
 </div> 
 </body>
 </html>
