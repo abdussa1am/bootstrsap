@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+  <div>
+    <center><h1>PROJECT ONE</h1></center>
+  </div>
+
+ <div id="dv">
+    <center>
+    <input type="text" id="do" placeholder="name" size="30" maxlenght="15" required>
+    <button onclick="text()">submit</button>
+  </center>
+    
+  <ul id="tnt">
+  </ul>
+
+
+ </div>
+<div>
+<center><h2>FORM</h2></center>
+  <form>
+    Name: <input type="text" id="de" placeholder="name" size="30" maxlenght="15" required>
+    <button onclick="next()">submit</button><br>
+    <br>
+    Age: <input type="text" placeholder="Age"><br>
+    <br>
+    Email: <input type="text" placeholder="Email"><br>
+    <br>
+    Password: <input type="text" placeholder="Password"><br>
+    <br>
+</div>
+
+<style>
+  body{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background: #bab5df;
+
+  }
+  div{
+    background: white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 4px solid rgb(107, 121, 247);
+  padding: 20px;
+  }
+ 
+
+</style>
+
+<script>
+     
+
+  
+ function text(){
+
+   var s = document.getElementById("do").value;
+   var n = document.createTextNode(s);
+   var q = document.createElement("LI");
+   q.appendChild(n);
+   var u = document.getElementById("tnt");
+   u.appendChild(q);
+}
+
+
+
+</script>
+</body>
+</html>

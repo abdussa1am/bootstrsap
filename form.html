@@ -10,30 +10,65 @@
 </head>
 
 <style>
-
-.contact{
-    position: ;
-}
+ body{
+   background-color: rgb(250, 250, 227);
+ }
  .ser1{
 
-     
-     margin: 200px;
+     background-color: rgb(245, 245, 195);
+     margin: 150px;
      padding: 100px;
+     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+     width:  800px;
+     margin-left: 270px;
+     
  }
+ .ser1 h1{
+
+	   text-transform: uppercase;
+     font-family: 'Open Sans Condensed', sans-serif;
+     color: #797979;
+     font-size: 18px;
+     font-weight: 100;
+     padding: 20px;
+     margin: -20px;
+ }
+
+
  input{
-     width: 100%;
-     border: none;
-     border-bottom: 1px solid black;
-    
+  box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 15px;
+	font: 16px Arial, Helvetica, sans-serif;
+	height: 45px;
 }
+
 input[type=button]{
-    background-color: rgb(0, 13, 128);
+    background-color: #797979;
     color: white;
-    width: 10%;
+    width: 15%;
+    margin-top: 30px;
    
+}input[type=button]:hover{
+
+  background-color:   #a7a5a5;
+  transform: scale(1.1);
+}
+.ft{
+  height: 100px;
+  background-color: #343a40;
+  color: white;
 }
 
-
+.blank{
+  background-color: blue;
+}
 
 
 </style>
@@ -50,10 +85,10 @@ input[type=button]{
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="bootstrap.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="form.html">Link</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -62,35 +97,50 @@ input[type=button]{
         </form>
       </div>
     </nav>
-    <div class="firstimage">
-    <img src="wood-591631_1920.jpg" width="100%" height="800px">
-    </div>
-    <div class="contact">
-        <div class="ser1">
-          <center><h1>Contact us</h1></center><br>
-          <dv class="">
+    
+    <div class="ser1">
+      <center><h1>Contact us</h1></center><br>
+        <form>
           Name<br>
-          <input type="text" placeholder="name" id="name">
+          <input type="text" placeholder="name" id="sname" maxlength="15" required>
           Email<br>
-          <input type="email" placeholder="email"  id="email">
-          </dv>
-          <div>
+          <input type="email" placeholder="email"  id="email" required>
           Age<br>
           <input type="date" placeholder="Age" id="Age">
           Password<br>
-          <input type="password" placeholder="Password" id="Password">
-          </div><br>
-          <center><input type="button" value="submit"></center>
-        </div>
-        
+          <input type="Password" placeholder="password" id="sPassword" required>
+          <br>
+          <center><input type="button" value="submit" onclick="ntext()"></center>
+        </form>
     </div>
-
-
-
-
-
-
-
-    </div>
+  </div>
 </body>
+<footer>
+  <div class="ft">
+    <div class="col-lg-3">
+     <center><h1 style="padding-top: 10px;">footer</h1></center>
+    </div>
+  </div>
+</footer>
+
+
+
+
 </html>
+<script>
+  function ntext(){
+    var s = document.getElementById("sname").value;
+
+    if( s==="") {
+      document.getElementById("sname").style.border = "1px solid red";
+    }
+    
+    var q = document.getElementById("sPassword").value;
+  
+    if( q.length <= 3){
+      document.getElementById("sPassword").style.border = "1px solid red";
+    }
+  
+   }
+
+</script>
